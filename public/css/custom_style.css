@@ -1,0 +1,552 @@
+/*
+New css code 
+*/
+
+.select_input_container {
+    width: 100%;
+    height: 100%;
+}
+
+.select_input_container .select_item {}
+
+.select_input_container .select_item label {
+
+    display: block; /* Make sure it's a block element */
+    margin: 10px 0px 5px 0px;
+    font-size: 20px;
+    color: white;
+}
+
+.select_input_container .select_item .menu {}
+
+.select_input_container .select_item .menu select {
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.select_input_container .select_item .menu input {
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.select_input_container .select_item .menu select option {
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.select_input_container .custom-select-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.select_input_container .custom-select {
+    width: calc(100% - 1.5em);
+    /* Adjust width to accommodate icon */
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    /* Set background color if needed */
+}
+
+
+.custom-select-wrapper {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+
+
+.select-icon {
+    cursor: pointer; /* Change cursor on hover */
+    margin-left: 8px; /* Add space between input and icon */
+}
+
+.select_input_container .select-icon {
+    position: absolute;
+    font-size: 24px;
+    color: blue;
+    font-weight: 900;
+}
+
+.select_input_container .select-icon.ltr {
+    right: 8px; /* For LTR languages */
+}
+
+.select_input_container .select-icon.rtl {
+    left: 8px; /* For RTL languages (Hebrew/Arabic) */
+}
+.search-icon {
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+
+.search-icon.typing {
+    background-color: yellow;
+}
+
+
+
+.select_input_container .custom-select.selected + .select-icon {
+    transform: rotate(180deg);
+    /* Rotate icon */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+    color: #333;
+    /* Change icon color on selection */
+}
+
+.select_input_container .custom-select.selected {
+    background-color: #f0f0f0;
+    /* Change background color on selection */
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    overflow-y: scroll;
+    max-height: 50%;
+    background: #007bff;
+    border: 1px solid white;
+    width: 80%;
+    float: right;
+    margin: auto;
+}
+
+.suggestions div {
+    padding: 8px;
+    cursor: pointer;
+    text-align: right;
+    border-bottom: 1px solid #fbfbfb4a;
+    color: white;
+}
+
+.suggestions div:hover {
+    background-color: #0f71c5;
+}
+
+/* width */
+.suggestions::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.suggestions::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.suggestions::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.suggestions::-webkit-scrollbar-thumb:hover {
+    background: #012171;
+}
+
+
+#map {
+    height: 70%;
+    width: 100%;
+}
+
+#locationInput {
+    margin-bottom: 10px;
+}
+
+#locationForm {
+
+    text-align: right;
+
+    height: 60%;
+
+    color: white;
+}
+
+#locationForm h2 {
+
+    margin-bottom: 20px;
+}
+
+#locationForm input {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+
+    margin: 15px 0px;
+}
+
+#locationForm .findBtn {
+
+    width: 48%;
+
+    padding: 8px;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    background: #1783e0;
+
+    color: white;
+
+    font-size: 18px;
+
+    margin: 15px 0px;
+
+    cursor: pointer;
+}
+
+#locationForm .myLocationBtn {
+
+    width: 50%;
+
+    padding: 8px;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    background: #1783e0;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+#locationForm .locationSubmitBtn {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    background: #1783e0;
+
+    color: white;
+
+    font-size: 24px;
+
+    margin: 30px 0px;
+
+    cursor: pointer;
+}
+
+#locationForm .findBtn:hover {
+    background: #1375c9;
+}
+
+#locationForm .myLocationBtn:hover {
+    background: #1375c9;
+}
+
+#locationForm .locationSubmitBtn:hover {
+    background: #1375c9;
+}
+
+#locationForm #map {
+
+    height: 70%;
+}
+
+
+
+.correct {
+    padding: 30px 15px;
+    background: #1783e0;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.correct h2 {
+    font-size: 18px;
+}
+
+.correct label {
+
+    padding: 5px;
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+.correct span {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background: darkgray;
+    border: 0;
+    border-radius: 4px;
+    font-size: 21px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.correct p {
+    padding: 10px;
+}
+
+.correct .input_digits {}
+
+.correct .input_digits input {
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+    color: #605f5f;
+}
+
+.correct button {
+    background: #fdbe00;
+    padding: 10px;
+    font-size: 21px;
+    border: 0px;
+    width: 75%;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.correct button:hover {
+    background: #ea8e05;
+}
+
+
+.correct .input_btn {
+    background: #fdbe00;
+    padding: 10px;
+    font-size: 21px;
+    border: 0px;
+    width: 75%;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.correct .input_btn:hover {
+    background: #ea8e05;
+}
+
+.incorrect {
+    padding: 30px 15px;
+    background: #1783e0;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.incorrect h2 {
+    font-size: 18px;
+}
+
+.incorrect label {
+
+    padding: 5px;
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+.incorrect span {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background: darkgray;
+    border: 0;
+    border-radius: 4px;
+    font-size: 21px;
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+.incorrect p {
+    padding: 10px;
+}
+
+.incorrect .input_digits {}
+
+.incorrect .input_digits input {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+    color: #2a2a2a;
+    border: 4px solid #cc6161;
+    margin: 1px;
+}
+
+.incorrect button {
+    background: #fdbe00;
+    padding: 10px;
+    font-size: 21px;
+    border: 0px;
+    width: 75%;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.incorrect button:hover {
+    background: #ea8e05;
+}
+
+.incorrect .input_btn {
+    background: #fdbe00;
+    padding: 10px;
+    font-size: 21px;
+    border: 0px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.incorrect .input_btn:hover {
+    background: #ea8e05;
+}
+
+
+.responseText {}
+
+.responseText form {
+    margin: 25px 0px;
+}
+
+.responseText form label {
+
+    text-align: right;
+
+    float: right;
+
+    color: white;
+}
+
+.responseText form br {
+    display: none;
+}
+
+.responseText form select {
+    width: 97%;
+    border: 0;
+    border-left: 5px solid white;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.responseText form input {
+    padding: 8px 50px;
+    background: #1783e0;
+    color: white;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.responseText form input:hover {
+    background: #0c68b7;
+    color: white;
+    cursor: pointer;
+}
+.search{}
+.search .buttonSearchIcon{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+.search .buttonSearchIcon:hover{
+    font-weight: 700;
+}
+.buttonSearch {
+    padding: 8px 50px;
+    background: #1783e0;
+    color: white;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.buttonSearchIcon {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttonSearchIcon.blue-background {
+    background-color: #1783e0;
+    border-radius: 4px;
+}
+
+.buttonSearchIcon i {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

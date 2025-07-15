@@ -1,0 +1,116 @@
+/* Container Styles */
+.home-container {
+  background:#1783E0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow:hidden;
+
+}
+
+/* Header Styles */
+.home-header {
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+  width: 100%;
+  position: relative; /* Ensures absolute positioning for the child */
+ 
+}
+
+.header-icon-button {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Moves the icon to the far right */
+  border-radius: 50%;
+}
+
+.header-icon {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.home-title {
+font-size: clamp(1rem, 17vw, 4.0rem);
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.home-description {
+font-size: clamp(1rem, 6vw, 2rem);
+    font-weight: 500;
+}
+
+/* Main Content Styles */
+.home-main {
+  text-align: center;
+  
+
+}
+
+.home-image {
+width: clamp(200px, 78vw, 313px);
+    height: auto;
+
+  
+}
+
+/* Footer Styles */
+.home-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+   margin-bottom:10px;
+}
+
+.footer-button {
+  font-weight: bold;
+  background-color: #fdbe00 !important;
+  width:300px;
+ 
+}
+
+/* Styles for the "כניסה חוזרת" clickable text */
+.relogin-text {
+    cursor: pointer !important;
+    color: #ffffff99 !important;
+    text-align: center !important;
+    margin-top: 40px !important;
+    font-size: 1.2rem !important;
+    padding: 10px 25px !important;
+    border-radius: 25px !important;
+    /* border: 2px solid rgba(255, 255, 255, 0.3) !important; */
+    /* backdrop-filter: blur(5px) !important; */
+    -webkit-backdrop-filter: blur(5px) !important;
+    transition: all 0.3s ease !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important; */
+    font-weight: 550 !important;
+    letter-spacing: 0.5px !important;
+    display: inline-block !important;
+}
+
+.relogin-text:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+  border-color: #FDBE00 !important;
+}
+
+.relogin-text:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+

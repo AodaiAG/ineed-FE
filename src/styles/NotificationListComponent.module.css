@@ -1,0 +1,140 @@
+/* ✅ Notification Container */
+.notificationContainer {
+    max-width: 400px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Header */
+.notificationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title */
+.notificationTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Edit Button */
+.editButton {
+    color: #1A76D2 !important;
+}
+
+/* ✅ Edit Actions */
+.editActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Select All Button */
+.selectAllButton {
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Button Group */
+.actionButtons {
+    display: flex;
+}
+
+/* Mark as Read */
+.markReadButton {
+    background-color: #007BFF !important;
+    color: white !important;
+}
+
+/* Delete Button */
+.deleteButton {
+    background-color: #D32F2F !important;
+    color: white !important;
+}
+
+/* ✅ Notification List */
+.notificationList {
+    padding: 0;
+}
+
+/* Individual Notification Item */
+.notificationItem {
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+/* Read & Unread Notifications */
+.read {
+    background: #f7f7f7;
+}
+
+.unread {
+    background: #FFFBEA;
+}
+
+/* Notification Icon */
+.notificationIcon {
+    min-width: 40px;
+}
+
+/* Notification Text */
+.notificationText {
+    flex-grow: 1;
+}
+
+/* No Notifications */
+.noNotifications {
+    text-align: center;
+    padding: 10px;
+    color: gray;
+}
+
+/* Checkbox */
+.notificationCheckbox {
+    margin-right: 8px;
+}
+
+/* ✅ Container for the action buttons (Select All, Mark as Read, Delete) */
+.actionButtonsContainer {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+width: 102%;
+    margin-top: 10px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* ✅ Select All Button */
+.selectAllButton {
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+}
+
+/* ✅ Grouping for Mark as Read & Delete Buttons */
+.actionButtonGroup {
+    display: flex;
+}
+
+/* ✅ Mark as Read Button */
+.markReadButton {
+    background-color: #007BFF !important;
+    color: white !important;
+    padding: 6px 12px;
+}
+
+/* ✅ Delete Button */
+.deleteButton {
+    background-color: #D32F2F !important;
+    color: white !important;
+    padding: 6px 12px;
+}

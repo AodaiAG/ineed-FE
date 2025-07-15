@@ -1,0 +1,68 @@
+.orientationWarning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFCC00; /* Yellow background for the warning */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above the page content */
+    text-align: center;
+}
+
+.orientationTitle {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.orientationSubtitle {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.orientationMessage {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.orientationImage {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.rotateArrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.topArrow {
+    top: 0;
+    right: 0;
+    
+}
+
+.bottomArrow {
+bottom: 0;
+    position: absolute;
+    left: 0;
+}
+
+.leftArrow {
+	left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.rightArrow {
+right: 0;
+    bottom: 0;
+}

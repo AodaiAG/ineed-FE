@@ -1,0 +1,109 @@
+/* AvailabilityForm.module.css */
+
+.availability-form-container {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.availability-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.availability-label-required::before {
+    content: "*";
+    color: red;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.availability-24-7 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.availability-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* Checkbox and label container with fixed width */
+.day-checkbox-label-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 50px; /* Fixed width for consistent alignment */
+}
+
+/* Time inputs container */
+.day-time-inputs-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Separator between time inputs */
+.time-separator {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Time input fields */
+.day-input {
+    width: 100px; /* Fixed width for both text and time types */
+    height: 32px; /* Fixed height for both text and time types */
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #aaa;
+    padding: 5px; /* Ensure consistent padding */
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Disable the jumping effect for placeholders and consistent styling */
+.day-input[type="time"] {
+    -webkit-appearance: none; /* Removes default styling on some browsers */
+}
+
+.day-input:disabled {
+    background-color: white !important;
+    color: #999;
+}
+
+.day-input::placeholder {
+    color: #3c3535;
+}
+.day-input input {
+    pointer-events: none;
+}
+
+
+
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 0.4em;
+    font-weight: bold;
+}

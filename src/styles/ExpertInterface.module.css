@@ -1,0 +1,313 @@
+/* ExpertInterface.module.css */
+
+/* General Reset */
+
+
+
+
+/* Container */
+.expertInterface_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+  background-color: transparent;
+  background: linear-gradient(194deg, #000000, #796e6e) !important;
+  position: relative;
+  	    overflow: hidden; /* Prevent scroll if extra space appears */
+		justify-content: space-between;
+
+height:100%;
+
+	
+
+}
+
+/* Language Switch */
+.expertInterface_languageSwitch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.expertInterface_languageSwitch img {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.expertInterface_languageSwitch img:hover {
+    transform: rotate(15deg);
+    opacity: 0.8;
+}
+
+/* Main Title */
+.expertInterface_mainTitle {
+font-size: clamp(1rem, 17vw, 4.0rem);
+    font-weight: 500;
+        
+	
+    max-width: 100%;
+    text-align: center;
+}
+.menuIcon svg {
+  color: white !important;
+}
+
+/* Change color of the bell (notification) icon */
+.notificationIcon svg {
+  color: white !important;
+}
+/* Subtitle */
+.expertInterface_subTitle {
+  font-size: clamp(1rem, 8vw, 2rem);
+  font-weight: 500;
+  margin: 5px 0 20px;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Image Container */
+.expertInterface_imageContainer {
+
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	    flex-direction: column;
+		margin-bottom: -5px;
+
+}
+
+/* Worker Image */
+.expertInterface_workerImage {
+    width: 100%;
+   max-width: 161px;
+    margin: auto;
+}
+
+/* Message Text */
+.expertInterface_messageText {
+   
+    white-space: nowrap; /* Prevent wrapping onto a new line */
+    overflow: hidden; /* Hide overflowing text */
+	    direction: rtl;
+    text-overflow: ellipsis; /* Show ellipsis (...) if the text is too long */
+    font-size: 1.1rem; /* Make sure the font size is manageable */
+}
+
+/* Settings Button */
+.expertInterface_settingsButton {
+  background-color: #1783E0;
+  color:#ffffff;
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 90%;
+}
+.expertInterface_businessCardButton {
+  background-color: #FDBE00; /* Different color */
+  color: #ffffff;
+  font-size: clamp(1rem, 6vw, 1.5rem);
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 90%;
+}
+
+/* Button Container to control spacing */
+.expertInterface_buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px; /* Control space below the button */
+}
+.countdown {
+    margin-right: 10px; /* Space between countdown and text */
+    font-size: 0.8rem; /* Smaller font for countdown */
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.expertInterface_businessCardButton:hover {
+  transform: scale(1.05);
+}
+
+.expertInterface_settingsButton:hover {
+  transform: scale(1.05);
+}
+.resendButton {
+    background-color: #4f3d09; /* Change this to your desired color */
+	    white-space: nowrap; /* Prevents text from wrapping to a new line */
+
+}
+.resendButton:disabled {
+    color: #666; /* Adjust text color for better visibility */
+	    font-size: 1.5rem; /* Smaller font for countdown */
+
+}
+.resendButton:disabled .countdown {
+    color: #ffffff; /* Active color for countdown text */
+    font-weight: bold;
+
+}
+.expertInterface_settingsButton,
+.resendButton {
+    width: 300px; /* Set a fixed width */
+	margin-top:24px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow if the text is too long */
+    text-overflow: ellipsis; /* Add an ellipsis (...) if the text is too long */
+}
+.expertInterface_contactPrompt {
+    font-size: clamp(1rem, 4.2vw, 1.4rem);
+    color: #FDBE00;
+    text-align: center;
+    margin-top: 1rem;
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+    max-width: 100%; /* Ensures text stays within container */
+	font-weight: bold; /* Makes text bold */
+
+}
+
+.expertInterface_resendSection {
+
+    font-size: clamp(1.1rem, 2vw + 0.5rem, 1.2rem); /* Responsive font size */
+    color: #FDBE00;
+    text-align: center;
+    margin-top: 0.5rem;
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+    max-width: 100%; /* Ensures text stays within container */
+}
+
+.resendLink {
+    color: #FDBE00;
+    cursor: pointer;
+margin: 0 3px;
+
+    text-decoration: underline;
+}
+
+.disabledLink {
+    color: #FDBE00;
+    cursor: default;
+	margin: auto 3px;
+	
+}
+.clickableText {
+    color: #1783E0;
+    cursor: pointer;
+
+	margin: 0.20rem;
+}
+.cardRequestText {
+    font-family: 'Saira';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Main container */
+
+
+/* Header container for language switch, title, and subtitle */
+.headerContainer {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+	margin-bottom: 5px;
+    /* gap: 1rem; */
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+/* Flex container for resend section and settings button */
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 10px;
+    margin-top: auto; /* Push to the bottom */
+}
+
+/* Spacer to take up remaining space between header and footer */
+.spacer {
+    flex-grow: 1;
+}
+.headerContainer {
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+	margin-top: 10px;
+    /* gap: 1rem; */
+    /* justify-content: space-between; */
+    width: 100%;
+}
+.notificationIcon {
+    position: relative;
+    cursor: pointer;
+    color: #555; /* Ensure the icon color is visible */
+}
+
+.notificationIcon svg {
+    font-size: 35px; /* Set a larger font size for visibility */
+}
+
+.notificationIcon .MuiBadge-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 35px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.closedRequestsButton {
+    background-color: #1A4B75 !important; /* Red shade for closed requests */
+    color: white !important;
+}
+
+
+
+.notificationDropdown {
+position: absolute;
+    top: 60px;
+    background: #676767;
+    box-shadow: 3px 36px 92px #978989;
+    border-radius: 8px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+
+}
+
+

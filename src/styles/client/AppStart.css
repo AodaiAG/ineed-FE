@@ -1,0 +1,92 @@
+/* Container Styles */
+.appstart-container {
+  background-color: #fdbe00; /* Yellow background */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+    overflow: hidden; /* Prevent content from stretching */
+
+}
+
+/* Header Styles */
+.appstart-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.appstart-icon-button {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Adjust as needed */
+}
+
+.appstart-icon {
+  width: auto; /* Adjust icon size */
+  height: auto;
+  cursor: pointer;
+
+}
+body.no-scroll {
+  overflow: hidden; /* Disable scrolling */
+}
+.appstart-icon:hover {
+  transform: rotate(15deg); /* Rotate the icon slightly */
+  opacity: 0.8; /* Reduce the opacity */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.appstart-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.appstart-title {
+font-size: clamp(1rem, 17vw, 4.0rem);
+    font-weight: 500;
+    color: white;
+    margin: 10px;
+}
+
+.appstart-description {
+  font-size:clamp(1rem, 6vw, 2rem);
+  color: white;
+  margin-top: 10px;
+}
+
+/* Main Content Styles */
+.appstart-main {
+  text-align: center;
+}
+
+.appstart-image {
+    width: clamp(200px, 88vw, 315px); /* ✅ Responsive width */
+    height: auto;
+    margin-left: 12%; /* ✅ Move slightly to the left relative to its container */
+    position: relative; /* ✅ Ensures proper positioning */
+}
+
+/* Footer Styles */
+.appstart-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+.service-provider-button {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%; /* Default width takes full space of container */
+  max-width: 200px; /* Maximum width of the button */
+}
+
+.client-button {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%; /* Default width takes full space of container */
+  max-width: 200px; /* Maximum width of the button */
+}

@@ -1,0 +1,144 @@
+.profilePageContainer {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  background: #1783e0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
+}
+
+.header {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+
+.nameText {
+  font-family: "Saira", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: white !important;
+  background: #1a4b75 !important;
+  border: 3px solid #ffffff !important;
+  border-radius: 14px !important;
+  padding: 8px 16px !important;
+  display: inline-block !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+.profileImageCard {
+  margin: 0 auto !important;
+  border-radius: 14px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  width: 90% !important;
+  min-height: 250px !important; /* Ensure the image is fully visible */
+}
+
+.profileImage {
+  width: 100% !important;
+  height: 100% !important; /* Ensure the image scales properly */
+  object-fit: cover !important;
+}
+
+.infoCard {
+background: #1a4b75 !important;
+    border: 3px solid #fdbe00 !important;
+    border-radius: 14px !important;
+    margin: 10px 0 !important;
+    display: flex
+;
+    /* padding: 20px !important; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+    text-align: center !important;
+    min-height: 62px !important;
+    flex-direction: column;
+}
+
+.infoTitle {
+  font-family: "Saira", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.infoText {
+  font-family: "Inter", sans-serif !important;
+
+  font-weight: bold !important;
+  color: #fdbe00 !important;
+}
+
+.ratingStars {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  margin-top: 10px !important;
+}
+
+.star {
+  font-size: 20px !important;
+  color: #fdbe00 !important;
+}
+
+.locationBox {
+  position: relative !important;
+  margin: 20px auto !important;
+  background: #1a4b75 !important;
+  border: 3px solid #ffffff !important;
+  border-radius: 14px !important;
+  text-align: center !important;
+  width: 90% !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mapImage {
+  width: 100% !important;
+  border-radius: 14px !important;
+}
+
+.locationLabel {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #fdbe00 !important;
+  position: absolute !important;
+  top: -15px !important;
+  right: 10px !important;
+  background: #1a4b75 !important;
+  border: 3px solid #fdbe00 !important;
+  border-radius: 14px !important;
+  padding: 5px 10px !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.footer {
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+.backButton {
+  width: 100% !important;
+  height: 50px !important;
+  background: #fdbe00 !important;
+  border-radius: 14px !important;
+  font-family: "Saira", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  color: #1a4b75 !important;
+  text-transform: uppercase !important;
+}
+.ratingSection {
+  display: flex;
+  align-items: center; /* Align label and stars vertically */
+  justify-content: center; /* Center the entire section */
+  flex-direction: row-reverse;
+  gap: 10px; /* Space between label and stars */
+}
+
+

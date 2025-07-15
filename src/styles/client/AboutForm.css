@@ -1,0 +1,85 @@
+/* Container Styles */
+.about-form-container {
+  background-color: #1783e0;
+  padding: 27px 13px 0px 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  direction: var(--container-direction); /* Use the CSS variable */
+}
+
+/* Title Styles */
+.about-form-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Form Field Styles */
+.about-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-form-field label {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* Input Styles */
+.about-form-input {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Phone Field Container */
+.phone-number-container {
+  display: flex;
+  gap: 8px;
+  direction:rtl;
+}
+
+.phone-prefix-select {
+  background-color: white;
+  border-radius: 5px;
+  width: 80px;
+}
+
+.phone-number-input {
+  flex: 1;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Textarea Styles */
+.about-form-textarea {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Submit Button Styles */
+.about-form-submit {
+  background-color: #fdbe00 !important;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px !important;
+
+}
+
+

@@ -1,0 +1,160 @@
+/* ExpertMainPage.module.css */
+
+/* Body */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 16px;
+}
+
+.ExpertMainPage_expertPage_mainTitle {
+    font-size: clamp(1.5rem, 3vw + 1rem, 2.5rem); /* Main title */
+}
+
+.ExpertMainPage_expertPage_subTitle__Gi2CQ {
+    font-size: clamp(1rem, 2vw + 0.5rem, 2rem); /* Subtitle */
+}
+
+.ExpertMainPage_expertPage_expertInterface {
+    font-size: clamp(0.9rem, 1.5vw + 0.3rem, 1.5rem); /* Smaller text */
+}
+
+.expertPage_body {
+    background: black;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+	 overflow: hidden !important; /* Prevent scroll if extra space appears */
+
+}
+
+/* Main Container */
+.expertPage_mainContainer {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px auto;
+    background-color: transparent;
+	background: linear-gradient(194deg, #000000, #796e6e) !important;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    height: 100%;
+    
+	
+
+
+}
+.expertPage_headerContainer {
+display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    /* gap: 1rem; */
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+
+
+
+/* Language Icon */
+.expertPage_languageIcon {
+position: absolute;
+    top: 3px;
+    right: 11px;
+}
+
+
+.expertPage_languageIcon img {
+width: 68px;
+    height: 61px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.expertPage_languageIcon img:hover {
+    transform: rotate(15deg);
+    opacity: 0.8;
+}
+
+/* Main Title */
+.expertPage_mainTitle {
+font-size: 4.0rem;
+    font-weight: 500;
+    margin-top: 32px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Subtitle */
+.expertPage_subTitle {
+    font-size: clamp(1rem, 6vw, 2rem);
+    margin-bottom: 20px;
+    margin-top: 4px;
+    font-weight: 500;
+
+}
+
+/* Expert Interface Text */
+.expertPage_expertInterface {
+    font-size: clamp(1rem, 8vw, 2rem);
+margin-top: 6px;
+    font-weight:500;
+
+}
+
+/* Image Container */
+.expertPage_imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+.expertPage_imageContainer img {
+    width: 100%;
+    max-width: 260px;
+    /* margin: 0px 125px; */
+    position: absolute;
+    left: 25%;
+}
+
+/* CTA Button */
+.expertPage_ctaButton {
+    background-color: #FDBE00; /* More vibrant golden background */
+    color: white; /* Black text for contrast */
+    font-size: 1.6rem; /* Adjusted font size */
+    border: none;
+    padding: 13px;
+    width: 300px;    
+    cursor: pointer;
+    border-radius: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+	margin-bottom: 10px;
+}
+
+.expertPage_ctaButton:hover {
+    transform: scale(1.05);
+}
+.spacer {
+    flex-grow: 1;
+}
+
+.home-container {
+  background:black !important;
+
+}

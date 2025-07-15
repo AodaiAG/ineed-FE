@@ -1,0 +1,174 @@
+.clientDContainer {
+  background-color: #1783e0 !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  overflow: hidden !important;
+}
+
+/* Header */
+.clientDHeader {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  margin-bottom: 5px !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.clientDIconButton {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+
+.clientDIcon {
+  width: auto !important;
+  height: auto !important;
+  cursor: pointer !important;
+}
+
+.clientDContent {
+  text-align: center !important;
+}
+
+.clientDTitle {
+  font-size: clamp(1rem, 17vw, 4.0rem) !important;
+  font-weight: 500 !important;
+  color: white !important;
+  margin: 10px !important;
+}
+
+.clientDDescription {
+  font-size: clamp(1rem, 6vw, 2rem) !important;
+  color: white !important;
+  margin-top: 10px !important;
+}
+
+/* Worker Image */
+.clientDImageContainer {
+  margin-bottom:-4px;
+  display: flex !important;
+}
+
+.clientDWorkerImage {
+  width: 100% !important;
+  max-width: 169px !important;
+  
+}
+
+/* Buttons */
+.clientDButtonsContainer {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+}
+
+.clientDButtonsContainer .clientDButton:last-child {
+    margin-bottom: 10px !important;
+}
+
+.clientDButton {
+  width: 90% !important;
+  max-width: 300px !important;
+  margin: 5px !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  padding: 0.8rem !important;
+ 
+  border-radius: 10px !important;
+}
+
+.clientDNewRequestButton {
+  background-color: #fdbe00 !important;
+}
+
+.clientDMyRequestsButton {
+  background-color: #fdbe00 !important;
+}
+
+.clientDClosedRequestsButton {
+  background-color: #fdbe00 !important;
+}
+
+.notificationIcon {
+  position: relative !important;
+  cursor: pointer !important;
+  color: #555 !important; /* Ensure the icon color is visible */
+}
+
+.notificationIcon svg {
+  font-size: 35px !important; /* Set a larger font size for visibility */
+}
+
+.notificationIcon .MuiBadge-root {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.iconContainer {
+  display: flex !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  gap: 35px !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  margin: 10px !important;
+}
+
+.notificationDropdown {
+position: absolute;
+    top: 60px;
+    background: #676767;
+    box-shadow: 3px 36px 92px #000000;
+    border-radius: 8px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+
+}
+
+@media (min-width: 1025px) {
+  /* ✅ Force MUI Drawer inside iPhone Frame */
+  .iphoneScreen .MuiDrawer-root {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important; /* ✅ Full width of iPhone screen */
+    z-index: 250 !important; /* ✅ Ensure it appears above other elements */
+  }
+
+  /* ✅ Style the Drawer Paper (the actual sidebar panel) */
+  .iphoneScreen .MuiDrawer-paper {
+    width: 85% !important; /* ✅ Adjust sidebar width */
+    max-width: 250px !important; /* ✅ Limit width */
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.9) !important; /* ✅ Dark transparent */
+    border-radius: 20px 0 0 20px !important; /* ✅ Round left edges */
+  }
+}
+.sidebarDrawer {
+  position: relative !important;  /* ✅ Override MUI default positioning */
+  top: 0; /* ✅ Adjust if needed */
+  left: 0;
+  height: 100vh; /* ✅ Ensure it takes full height */
+  width: 250px; /* ✅ Customize width */
+  background-color: white; /* ✅ Adjust as needed */
+  border-right: 1px solid #ddd;
+}
+
+
+
+.spacer {
+  flex-grow: 1 !important;
+}

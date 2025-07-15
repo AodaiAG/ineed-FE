@@ -1,0 +1,179 @@
+/* SMSVerification.module.css */
+
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+/* Body */
+.smsVerification_body {
+    background: black;
+    color: #fff; /* White text color */
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+	    height: 100vh;
+		    overflow: hidden; /* Prevent scroll if extra space appears */
+
+    box-sizing: border-box; /* Ensure padding is included in total width/height */
+}
+
+/* Container */
+.smsVerification_container {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+
+    justify-content: space-evenly;
+    padding-block: 1rem;
+    position: relative; /* Allows for absolute positioning of the icon within the container */
+    width: 100%;
+	background: linear-gradient(194deg, #000000, #796e6e) !important;
+    margin: 0 auto; /* Center horizontally */
+		    overflow: hidden; /* Prevent scroll if extra space appears */
+
+  
+}
+
+/* Content */
+.smsVerification_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Validation Title */
+.smsVerification_validationTitle {
+    font-size:3rem;
+    font-weight: 100;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Phone Field */
+.smsVerification_phoneField {
+width: 100%;
+    margin-bottom: 10px;
+    display: flex
+;
+    text-align: right;
+    direction: rtl;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phone Label */
+.smsVerification_phoneLabel {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 1rem;
+	text-align: center; /* Center the label text */
+
+}
+
+/* Phone Input */
+.smsVerification_phone {
+    width: 76%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #979797; /* Darker background to contrast with text */
+    color: #fff;
+    text-align: center;
+}
+
+/* SMS Code Label */
+.smsVerification_smsCodeLabel {
+    font-size: 1.2rem;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+/* SMS Code Input */
+.smsVerification_smsCodeInput {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* SMS Box */
+.smsVerification_smsBox {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s;
+}
+
+.smsVerification_smsBox.smsVerification_error {
+    border-color: red;
+    animation: flash 0.5s ease-in-out 3, shake 0.5s ease-in-out 1;
+}
+
+/* Flash Animation */
+@keyframes flash {
+    0%, 100% {
+        background-color: #fff;
+    }
+    50% {
+        background-color: #ffcccc;
+    }
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Action Buttons */
+.smsVerification_actionButtons {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Button */
+.smsVerification_button {
+    background-color: #fdbe00; /* More vibrant golden background */
+    color: white; /* Black text for contrast */
+    font-size: 1.6rem; /* Adjusted font size */
+    border: none;
+    padding: 13px; /* Make the button wider */
+    cursor: pointer;
+    border-radius: 14px;
+    margin: 5px auto;
+    width: 100%;
+    transition: background-color 0.3s;
+    max-width: 300px;
+
+}
+
+.smsVerification_button:hover {
+    transform: scale(1.05);
+}
+
+/* Shake Effect */
+.smsVerification_shake {
+    animation: shake 0.5s ease-in-out;
+}

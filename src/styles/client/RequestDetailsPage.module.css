@@ -1,0 +1,631 @@
+/* Main Page */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   
+    background-color: #1783E0; /* ✅ Background color from image */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header */
+.headerContainer {
+width: 90%;
+    background-color: #1A4B75;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 14px;
+    font-size: 20px;
+	width: 84%;
+    font-weight: bold;
+    margin-top: 22px;
+
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Request Details Card */
+
+
+
+/* Expandable Sections */
+.expandableHeader {
+    width: 90%;
+    background: #FDD500;
+    color: black;
+    font-size: 18px;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px !important;
+    border: 3px solid #1A4B75 !important;
+    margin: 5px;
+    cursor: pointer;
+    display: flex
+;
+    /* align-items: center; */
+    /* text-align: center; */
+    justify-content: flex-end;
+}
+
+/* Professional List Container (NEW) */
+.professionalListContainer {
+    width: 90%;
+    background: white;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ✅ Subtle shadow */
+    border: 3px solid #FDD500;
+    margin-bottom: 15px;
+}
+
+/* Professionals Section */
+.professionalList {
+    display: flex;
+	
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* Professional Cards */
+.professionalCard {
+    background-color: white;
+    border-radius: 14px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    border: 3px solid #FDD500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: black !important;
+}
+
+/* Full List Container */
+.professionalListContainer {
+    width: 90%;
+    background: white;
+    border-radius: 14px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #FDD500;
+    margin-bottom: 15px;
+}
+
+/* Each Professional Card */
+.professionalCard {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 14px;
+    padding: 15px;
+    border: 3px solid #FDD500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 450px; /* Adjust as needed */
+}
+
+/* Hover Effect */
+.professionalCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(255, 193, 7, 0.5);
+}
+
+/* Avatar */
+.professionalAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Name & Price */
+.professionalInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.professionalName {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.professionalPrice {
+    font-size: 14px;
+    color: #1A4B75;
+}
+
+/* Select Button */
+.selectButton {
+    width: 100%;
+    background-color: #FDD500 !important;
+    color: black !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    padding: 12px 40px !important;
+    border-radius: 14px !important;
+    margin-top: 10px !important;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Target the Collapse container */
+.collapseContainer {
+    width: 100%; /* Make it full width */
+	
+}
+
+/* Target the Collapse wrapper */
+.collapseWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Target the professional list */
+.professionalList {
+width: 100%;
+    max-width: 600px;
+     display: flex; 
+    margin: 12px auto;
+    justify-content: center;
+    align-items: center;
+}
+/* ✅ Target the RadioGroup */
+.radioGroupCustom {
+    width: 80% !important;  /* Set width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	gap:5px;
+    box-shadow: 0px 15px 7px rgb(72 72 72 / 60%);
+border-radius: 20px; /* Rounded edges */
+background: transparent; /* Make background fully transparent */
+
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+.selectButton:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+}
+
+
+.professionalCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(255, 193, 7, 0.5);
+}
+
+/* Avatar */
+.professionalCard img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Fix for Professional Name */
+.professionalText .MuiListItemText-primary {
+    font-size: 16px;
+    font-weight: bold;
+    color: black !important;
+}
+
+/* Selection Radio Button */
+.professionalCard .MuiFormControlLabel-root {
+    width: 100%;
+}
+
+/* Select Button (UPDATED) */
+.selectButton {
+    width: 50% !important;
+    background-color: #1A4B75 !important;
+    color: white !important;
+    font-size: 18px !important;
+
+    padding: 12px 40px !important;
+    border-radius: 14px !important;
+    margin-top: 10px !important;
+    cursor: pointer;
+
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.selectButton:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+}
+
+/* Chat Section */
+.chatContainer {
+    width: 90%;
+    background-color: white;
+	
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 400px; /* ✅ Increased height */
+    overflow-y: auto;
+    border: 3px solid #1A4B75;
+}
+
+/* Chat Bubbles */
+.chatBubble {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* User Messages (Yellow) */
+.userMessage {
+    background-color: #FDD500;
+    color: black;
+    align-self: flex-start;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+/* Professional Messages (Blue) */
+.professionalMessage {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-end;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+/* System Messages (Gray) */
+.systemMessage {
+    background-color: #4A4A4A;
+    color: white;
+    align-self: center;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+/* No Experts Available Message */
+.noExpertsMessage {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A4B75; /* ✅ Dark blue */
+    padding: 10px;
+}
+
+/* Back Button */
+.backButton {
+    background-color: #000000 !important;
+    color: white !important;
+    font-size: 18px !important;
+    padding: 10px 40px !important;
+    border-radius: 14px !important;
+    margin-top: 20px !important;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.backButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.5);
+}
+
+/* Loading & Error Containers */
+.loadingContainer,
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.errorContainer {
+    color: red;
+    text-align: center;
+}
+.chatCollapseContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* ✅ Center the chat */
+    align-items: center;
+}
+/* Collapse Container - Full Width */
+.chatCollapseContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* ✅ Center the chat */
+    align-items: center;
+}
+
+/* Collapse Wrapper - Centers Content */
+.chatCollapseWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Chat Section */
+.chatContainer {
+width: 90%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 9px;
+    height: 486px !important;
+    overflow-y: auto;
+    border: 3px solid #FDD500;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Request Details Container */
+
+
+/* Request Card */
+.requestDetailsCard {
+    width: 100% !important;
+    max-width: 400px !important;
+    background: white !important;
+    border-radius: 14px !important;
+    padding: 15px !important;
+    border: 3px solid #FDD500 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    position: relative !important;
+    font-size: 16px !important;
+    color: black !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Header - Contains the ID and Delete Icon */
+.requestHeader {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+	
+    background: red !important;
+    border-radius: 10px !important;
+    padding: 10px 15px !important;
+    color: white !important;
+}
+
+/* Request ID (קריאה 1270) */
+.requestType {
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+/* Delete Icon */
+.deleteIcon {
+    font-size: 20px !important;
+    cursor: pointer !important;
+}
+
+/* Profession */
+.profession {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: black !important;
+    
+}
+
+/* Date & Time */
+.date {
+    font-size: 14px !important;
+    color: #1A4B75 !important;
+    font-weight: bold !important;
+    margin-top: 5px !important;
+}
+
+.fluentCheckmark {
+    font-size: 1.2rem;
+    color: #0078D4; /* Microsoft's Fluent Blue */
+    font-weight: bold;
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* ✅ Checkmark Icon */
+.checkmarkIcon {
+    color: green;  /* ✅ Green checkmark */
+    font-size: 24px;  /* ✅ Adjust size */
+    margin-left: 10px;  /* ✅ Add spacing */
+}
+/* ✅ Checkmark Icon */
+.checkmarkIcon {
+    color: green;  /* ✅ Green checkmark */
+    font-size: 24px;  /* ✅ Adjust size */
+    margin-left: 10px;  /* ✅ Add spacing */
+    transition: opacity 0.2s ease-in-out; /* ✅ Smooth transition */
+}
+
+
+
+/* Address */
+.address {
+    font-size: 14px !important;
+    color: #A3A3A3 !important;
+    margin-top: 5px !important;
+}
+/* Request Details Main Container */
+.requestDetailsContainer {
+width: 90% !important;
+    display: flex !important
+;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: #FB0000 !important;
+    border-radius: 14px !important;
+    border: 3px solid #FDD500 !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    margin: 20px 0 !important;
+}
+
+/* Left Section (Trash Icon) */
+.y1 {
+    width: 20% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Delete Icon */
+.deleteIcon {
+    font-size: 30px !important;
+    cursor: pointer !important;
+}
+
+/* Right Section (Details) */
+.y2 {
+width: 84%;
+    display: flex !important
+;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border: 3px solid #FDD500 !important;
+    border-radius: 14px !important;
+    background: white;
+    flex-direction: column;
+}
+
+/* Details without Request Number */
+
+
+
+/* Request Number */
+.x2 {
+
+display: flex !important
+;
+    align-items: center !important;
+    justify-content: center !important;
+    /* background-color: red !important; */
+    color: #000000 !important;
+	gap: 5px !important;
+    margin: 4px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    flex-direction: row-reverse;
+}
+
+/* Profession */
+.profession {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    color: black !important;
+    
+}
+
+/* Date & Time */
+.dateTime {
+    font-size: 16px !important;
+    color: gray !important;
+    
+}
+
+/* Address */
+.address {
+    font-size: 16px !important;
+    color: gray !important;
+    white-space: nowrap !important; /* Prevent text from breaking into multiple lines */
+    overflow: hidden !important; /* Hide overflow text */
+    text-overflow: ellipsis !important; /* Add "..." if text is too long */
+    width: 100% !important; /* Ensure full width */
+    display: block !important; /* Make sure it behaves correctly */
+	margin-bottom:2px;
+}
+.requestLabel {
+font-size: 20px !important;
+    font-weight: bold !important;
+    color: black !important;  /* Label styling */
+    text-align: center !important; 
+}
+
+.requestNumber {
+    font-size: 21px !important;
+    font-weight: bold !important;
+    color: #FDBE00 !important; /* Number styling */
+    text-align: center !important;
+    margin-top: 5px !important; /* Add spacing between label & number */
+}
+/* Parent container */
+.x1 {
+width: 92% !important;
+    display: flex !important
+;
+    flex-direction: column;
+	    text-align: center !important;
+    justify-content: center;
+    margin: 0px 0px 6px 0px;
+}
+
+/* Profession Text */
+.profession {
+    width: 100% !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    color: black !important;
+    white-space: nowrap !important;  /* Prevents wrapping */
+    overflow: hidden !important;  /* Hide overflow */
+    text-overflow: ellipsis !important;  /* Add "..." if text is too long */
+}
+
+/* Date & Time */
+.dateTime {
+    width: 100% !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    color: gray !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Address */
+.address {
+    width: 100% !important;
+    font-size: 14px !important;
+    color: gray !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+
+.headerTitle{
+	font-size: 26px !important;
+}
+
+
+/* Responsive Fix */
+
+
+

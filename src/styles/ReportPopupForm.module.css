@@ -1,0 +1,150 @@
+/* ReportPopupForm.module.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background for the popup effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above the page content */
+}
+
+.reportPopupContainer {
+background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    border: 2px solid #FFCC00;
+    flex-direction: column;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.reportPopupTitle {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.reportPopupSubtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.reportFormGroup {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: row-reverse;
+}
+
+.reportSelectWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.reportSelectField {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+}
+
+.reportDropdownArrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #FFA800; /* Yellow arrow */
+    font-size: 1.2rem;
+}
+
+.reportInputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+	
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+
+.reportCheckboxContainer {
+    display: flex;
+    align-items: center;
+		margin:5px;
+    font-size: 1rem;
+}
+
+.reportButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+
+}
+
+.reportBtnSend {
+    background-color: #FFCC00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+margin: 2px;
+}
+
+.reportBtnBack {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin: 2px;
+    flex: 1;
+}
+
+.reportSelectField {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #ffffff;
+    color: black;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.reportPlaceholder {
+    color: #aaa; /* Light gray for placeholder */
+}
+

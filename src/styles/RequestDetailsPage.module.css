@@ -1,0 +1,261 @@
+/* Main Page */
+.pageContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  background-color: black !important;
+    background: linear-gradient(194deg, #000000, #796e6e) !important;
+  min-height: 100vh !important;
+  box-sizing: border-box !important;
+  position: relative !important; /* Needed for absolute positioning of the cancel button */
+}	
+
+/* ביטול Button (Top Left Corner) */
+.cancelButton {
+  position: absolute !important;
+  top: 70px !important;
+  left: 20px !important;
+  background-color: red !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+}
+
+.noRequestsMessage{
+	
+	text-align: center !important;
+}
+
+/* Header */
+.header {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  color: white !important;
+  margin-bottom: 20px !important;
+  margin-top: 20px !important; 
+}
+
+.requestNumber {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: #FDD500 !important;
+  margin-right: 10px !important;
+}
+
+.title {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+/* Request Details */
+.details {
+  width: 100% !important;
+  max-width: 350px !important;
+  text-align: right !important;
+  color: white !important;
+  margin-bottom: 20px !important;
+  padding: 15px !important;
+  direction: rtl !important; /* Ensure right-to-left text alignment */
+}
+
+.details strong {
+  color: #FDD500 !important;
+  display: inline-block !important;
+  min-width: 100px !important;
+}
+
+.details p {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+
+/* Chat Section */
+.chatContainer {
+  width: 100% !important;
+  max-width: 800px !important;
+  height: 486px !important;
+  overflow-y: auto !important;
+  border: 1px solid #ddd !important;
+  border-radius: 8px !important;
+  background-color: #f9f9f9 !important;
+  padding: 10px !important;
+}
+
+/* Quotation Section */
+.quotationSection {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  background-color: #ffffff !important;
+  border-radius: 16px !important;
+  padding: 25px !important;
+  margin-top: 25px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid rgba(253, 213, 0, 0.2) !important;
+}
+
+.quotationInputContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  margin-top: 15px !important;
+}
+
+.quotationInputContainer .MuiTextField-root {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+.quotationInputContainer .MuiOutlinedInput-root {
+  height: 56px !important;
+  font-size: 20px !important;
+  text-align: center !important;
+  direction: ltr !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.quotationInputContainer .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(253, 213, 0, 0.5) !important;
+  border-width: 2px !important;
+  transition: all 0.3s ease !important;
+}
+
+.quotationInputContainer .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #FDBE00 !important;
+  border-width: 2px !important;
+  box-shadow: 0 0 0 4px rgba(253, 190, 0, 0.1) !important;
+}
+
+.quotationInputContainer .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #FDBE00 !important;
+  border-width: 2px !important;
+  box-shadow: 0 0 0 4px rgba(253, 190, 0, 0.15) !important;
+}
+
+.quotationInputContainer .MuiInputLabel-root {
+  color: #1A4B75 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  transform: translate(14px, 18px) scale(1) !important;
+}
+
+.quotationInputContainer .MuiInputLabel-root.Mui-focused {
+  color: #1A4B75 !important;
+  transform: translate(14px, -6px) scale(0.75) !important;
+}
+
+.quotationButton {
+  background-color: #FDD500 !important;
+  color: #1A4B75 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding: 14px 35px !important;
+  border-radius: 12px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  text-transform: none !important;
+  letter-spacing: 0.5px !important;
+  min-width: 180px !important;
+}
+
+.quotationButton:hover {
+  background-color: #FDBE00 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.quotationButton:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.expandableHeader {
+  width: 90% !important;
+  max-width: 800px !important;
+  background: #FDD500 !important;
+  color: black !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  padding:10px !important;
+  border-radius: 8px !important;
+    border: 3px solid #1A4B75 !important;
+  border-radius: 14px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: flex-end;
+    align-items: flex-end;
+  align-items: center !important;
+  margin-top: 10px !important;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.quotationText {
+  color: white !important;
+  font-size: 14px !important;
+  margin-top: 10px !important;
+}
+.chatCollapseContainer,
+.quotationCollapseContainer {
+  width: 90% !important;
+  max-width: 800px !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 10px !important;
+}
+.chatContainer {
+  width: 100% !important;
+  background-color: white !important;
+  border-radius: 14px !important;
+  padding: 15px !important;
+  height: 400px !important;
+  overflow-y: auto !important;
+  border: 3px solid #1A4B75 !important;
+}
+
+/* Back & Finish Work Buttons (Side by Side) */
+.buttonsRow {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 20px !important; /* Space between buttons */
+  margin-top: 20px !important;
+}
+
+.backButton,
+.finalizeButton {
+background-color: #000000 !important;
+    color: white !important;
+    font-size: 18px !important;
+    padding: 10px 40px !important;
+    border-radius: 10px !important;
+    margin-top: 20px !important;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+    transition: transform 0.2sease;
+}
+.quotationSection {
+  width: 100% !important;
+  max-width: 400px !important;
+  background-color: white !important;
+  border-radius: 10px !important;
+  padding: 15px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}

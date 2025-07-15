@@ -1,0 +1,124 @@
+/* Main Container */
+.container {
+  background-color: #2196f3 !important;
+  color: white !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-width: 325px !important;
+  height: 100% !important;
+  position: relative !important;
+  width: 100% !important;
+
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+/* Main Section */
+.mainSection {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Main Title */
+.mainTitle {
+  font-size: clamp(1rem, 17vw, 4.0rem) !important;
+  font-weight: 500 !important;
+  margin: 10px 0 !important;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.5rem !important;
+  margin-bottom: 30px !important;
+}
+
+/* Enter Title */
+.enterTitle {
+  font-size: 2rem !important;
+  margin-bottom: 20px !important;
+}
+
+/* Phone Input Section */
+.phoneInputSection {
+  display: flex !important;
+  gap: 10px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 20px !important;
+}
+
+/* Country Code Select */
+.countryCodeSelect {
+  background-color: white !important;
+  color: black !important;
+  width: 80px !important;
+  height: 50px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Phone Number Input */
+.phoneNumberInput {
+  background-color: white !important;
+  color: black !important;
+  display: flex !important;
+  gap: 10px !important;
+  outline: none !important;
+    border-radius: 8px !important;
+  border: none !important;
+  height: 50px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Terms Agreement Text */
+.termsText {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* Terms Link */
+.termsLink {
+color: #fdbe00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Illustration Section */
+.illustrationSection {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+      margin-bottom: 10px;
+}
+
+/* Worker Image Container */
+.workerImageContainer {
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+}
+
+/* Worker Image */
+.workerImage {
+  width: 165px !important;
+}
+
+/* Sign-In (Enter) Button */
+.enterButton {
+font-weight: bold;
+    background-color: #fdbe00 !important;
+    width: 300px !important;
+}
+
+.enterButton:hover {
+  background-color: #fbbf00 !important;
+}
+
+/* Spacer */
+.spacer {
+  flex-grow: 1 !important;
+}

@@ -1,0 +1,42 @@
+{
+    "languageIconAlt": "رمز اللغة",
+    "mainTitle": "أحتاج",
+    "subTitle": "كل الخبراء في مكان واحد",
+    "expertInterface": "واجهة الخبراء",
+    "workerImageAlt": "صورة عامل",
+    "letsGoButton": "انطلق",
+	"helpForm": {
+    "title": "بماذا يمكننا مساعدتك؟",
+    "searchPlaceholder": "بحث...",
+    "selectDomain": "اختر المجال",
+    "selectProfession": "اختر الموضوع",
+    "selectCity": "اختر المدينة",
+    "selectDate": "اختر الوقت",
+    "continue": "متابعة"
+  },
+  "homePage": {
+    "title": "I Need",
+    "description": "كل الخبراء في مكان واحد",
+    "continue": "متابعة"
+  },
+  "appStart": {
+    "title": "I Need",
+    "description": "كل الخبراء في مكان واحد",
+    "serviceProvider": "مقدم خدمة",
+    "client": "عميل"
+  },
+  "aboutForm": {
+    "title": "حدثنا عن نفسك",
+    "fullNameLabel": "الاسم الكامل",
+    "fullNamePlaceholder": "أدخل اسمك الكامل",
+    "phoneLabel": "رقم الهاتف",
+    "phonePlaceholder": "123 4567",
+    "commentLabel": "تعليق",
+    "commentPlaceholder": "اكتب تعليقك هنا...",
+    "submitButton": "اربطني بخبير",
+	  "requiredFieldsError": "يجب ملء جميع الحقول!"
+
+  }
+}
+
+

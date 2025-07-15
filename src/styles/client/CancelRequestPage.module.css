@@ -1,0 +1,68 @@
+/* ✅ Dialog Title */
+.dialogTitle {
+    text-align: center !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+    background-color: #1A4B75 !important;
+    color: white !important;
+    padding: 15px !important;
+}
+
+/* ✅ Dialog Content */
+.dialogContent {
+    padding: 20px !important;
+    text-align: center !important;
+}
+
+/* ✅ Dialog Actions */
+.dialogActions {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 15px !important;
+}
+
+/* ✅ Radio Buttons */
+.radioGroup {
+    width: 100% !important;
+}
+
+.radioLabel {
+    display: flex !important;
+    align-items: center !important;
+    background: white !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    border: 2px solid #ffcc00 !important;
+    width: 100% !important;
+	margin:0px !important;
+    margin-bottom: 10px !important;
+	direction:rtl;
+}
+
+.radioButton {
+    color: #ffcc00 !important;
+}
+
+/* ✅ Additional Details TextField */
+.textField {
+    width: 100% !important;
+    background-color: white !important;
+    border-radius: 10px !important;
+    margin-top: 10px !important;
+	direction:rtl;
+}
+
+/* ✅ Submit and Cancel Buttons */
+.backButton {
+    background-color: black !important;
+    color: white !important;
+    width: 45% !important;
+    font-size: 18px !important;
+}
+
+.submitButton {
+    background-color: red !important;
+    color: white !important;
+    width: 45% !important;
+    font-size: 18px !important;
+}

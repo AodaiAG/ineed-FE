@@ -1,0 +1,216 @@
+/* Main Container */
+.requestListContainer {
+  position: relative;
+  background: #1783E0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px 5px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    display: flex
+;
+    width: 100%;
+    /* align-items: stretch; */
+    justify-content: center;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #1A4B75;
+  border: 3px solid #ffffff;
+  border-radius: 14px;
+  padding: 6px;
+    width: 85%;
+  text-align: center;
+}
+
+/* Requests List */
+.requestsList {
+  flex-grow: 1;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 10px;
+}
+
+/* Request Card */
+.requestCard {
+  background: #ffffff;
+  border: 3px solid #fdbe00;
+  border-radius: 14px;
+  padding: 10px;
+  gap: 13px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.requestCard:hover {
+  transform: scale(1.03);
+}
+
+/* Top Section */
+.topSection {
+display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+/* Index Circle */
+.leftSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Profession and Date Section */
+.professionDateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
+  text-align: left;
+}
+
+.professionValue {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+.dateText {
+  font-size: 12px;
+  color: #A3A3A3;
+}
+
+/* Right Section - Unread Badge */
+.rightSection {
+display: flex
+;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+
+}
+
+
+
+/* Expandable Details Section */
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  direction: rtl;
+  border-top: 2px solid #e0e0e0;
+}
+
+/* Info Block */
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoLabel {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.infoValue {
+  font-size: 14px;
+  color: #A3A3A3;
+}
+
+/* Expandable Icon */
+.expandIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+/* Separator */
+.separator {
+  width: 90%;
+  height: 3px;
+  background: #1A4B75;
+  margin: 10px auto;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+ padding: 12px 16px 0 16px;
+
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #fdbe00;
+}
+
+.backButton {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  background: #000000;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.backButton:hover {
+  transform: scale(1.05);
+  background: #444444;
+}
+
+.unreadBadge {
+  background-color: red;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  min-width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #fff; /* Optional white border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.badgeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+

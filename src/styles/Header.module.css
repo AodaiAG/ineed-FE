@@ -1,0 +1,229 @@
+.stickyHeader {
+width: 100% !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+background: linear-gradient(194deg, #000000, #544e4e) !important;
+    padding: 0px 0px 0px 10px !important;
+    display: flex !important
+;
+    align-items: center !important;
+    justify-content: space-between;
+    box-shadow: 0px 4px 12px rgb(140 124 124 / 50%) !important;
+}
+
+/* Icon container */
+.iconContainer {
+    display: flex;
+    gap: 16px;
+	margin-top: 5px;
+}
+
+/* Menu, Notification, and Profile Icons */
+.menuIcon, .notificationIcon, .profileIcon {
+    color: #FFFFFF !important;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* Icon Hover Effects */
+.menuIcon:hover, .notificationIcon:hover, .profileIcon:hover {
+    background-color: #2b6ea1 !important;
+    transform: scale(0.8);
+}
+
+.customNotificationPopover {
+  position: absolute !important;
+  top: -71px !important;
+}
+
+
+.notificationDropdown, .languagePopup {
+
+top: 60px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #676767;
+    box-shadow: 3px 36px 92px #978989;
+    border-radius: 8px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* Profile Popover */
+.profilePopover {
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+    width: 300px !important;
+    background-color: #FFFFFF !important;
+    border-radius: 18px !important;
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid #ECECEC !important;
+}
+
+/* Large Avatar with Professional Blue-Gray Border */
+.profileAvatarLarge {
+    width: 120px !important;
+    height: 120px !important;
+    border: 4px solid #2E3A59 !important;
+    border-radius: 50% !important;
+    background-color: #F5F5F5 !important;
+}
+
+/* Profile Name with Dark Slate Color */
+.profileName {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #2E3A59 !important;
+    letter-spacing: 0.6px !important;
+}
+
+/* Edit & Save Buttons */
+.editButton, .saveButton {
+    width: 250px !important;
+    padding: 14px !important;
+    background-color: #F0F0F0 !important;
+    color: #2E3A59 !important;
+    border: 1px solid #D1D1D1 !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button Hover Effects */
+.editButton:hover, .saveButton:hover {
+    background-color: #2E3A59 !important;
+    color: #FFFFFF !important;
+}
+
+/* Text Input for Editing Name */
+.editInput {
+    width: 100% !important;
+    padding: 14px !important;
+    background-color: #F9F9F9 !important;
+    color: #2E3A59 !important;
+    border-radius: 10px !important;
+    border: 1px solid #D1D1D1 !important;
+    font-weight: 500 !important;
+}
+
+/* Placeholder Styling */
+.editInput::placeholder {
+    color: #A0A0A0 !important;
+}
+
+
+
+/* Sidebar List Items */
+.sidebarContainer .MuiListItem-root {
+    padding: 12px 18px !important;
+    border-radius: 8px !important;
+    transition: background-color 0.3s ease;
+}
+
+.sidebarContainer .MuiListItem-root:hover {
+    background-color: #2b6ea1 !important;
+}
+
+/* List Item Text */
+.sidebarContainer .MuiListItemText-primary {
+    font-size: 16px !important;
+    color: #FFFFFF !important;
+}
+/* Chat Icon with Badge */
+.chatIcon {
+  color: white !important;
+  position: relative;
+}
+
+/* Chat Dropdown Popover */
+.chatDropdown {
+  min-width: 300px;
+  max-height: 400px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+}
+
+/* Dropdown Header */
+/* Professional Chat Dropdown Header */
+.chatDropdownHeader {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1A4B75;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #FDBE00;
+  margin-bottom: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #F5F8FA;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Each Chat Item */
+.chatItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  direction:rtl;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Last Item - Remove Bottom Margin */
+.chatItem:last-child {
+  margin-bottom: 0;
+}
+
+/* Hover Effect for Chat Item */
+.chatItem:hover {
+  background-color: #e0eaff;
+  transform: translateY(-2px);
+}
+
+/* Chat Text */
+.chatText {
+  font-size: 14px;
+  color: #1A4B75;
+  font-weight: 500;
+}
+
+/* Chat Count Badge */
+.chatCountBadge {
+  background-color: #f44336;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Empty Chat Message */
+.emptyChatMessage {
+  font-size: 14px;
+  color: #999;
+  padding: 20px;
+  text-align: center;
+}
+

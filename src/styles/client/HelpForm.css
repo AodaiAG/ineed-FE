@@ -1,0 +1,270 @@
+/* Container Styles */
+:root {
+  --container-direction: rtl; /* Default value */
+}
+.help-form-container {
+  background-color: #1783e0;
+  padding: 27px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  direction: var(--container-direction); /* Use the CSS variable */
+}
+
+/* Title Styles */
+.help-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+
+/* Form Field Styles */
+.help-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.MuiAutocomplete-paper {
+  direction: var(--container-direction) !important; /* Inherit direction */
+
+}
+
+.help-form-field label {
+  color: white;
+  font-size: 1.3rem;
+  width:70% ;
+
+}
+
+.help-form-input {
+  background-color: white !important;
+  border-radius: 5px;
+  
+  width: 100%;
+  
+}
+
+
+.MuiAutocomplete-endAdornment {
+	display:flex;
+  justify-content: flex-end; /* Move to the opposite side */
+  left: 0; /* Align to the left for RTL */
+  right: auto; /* Remove right alignment */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center */
+  padding-left: 8px; /* Adjust padding */
+}
+/* Only adjust when there's a clear button */
+.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+  padding-right: 0px !important; /* Ensure proper spacing for the clear icon */
+}
+
+/* Only adjust when there's a dropdown arrow */
+.MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot {
+  padding-right: 4px !important; /* Ensure proper spacing for the arrow */
+}
+
+
+/* Submit Button Styles */
+.help-form-submit {
+  background-color: #fdbe00 !important; /* Yellow background */
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px !important;
+}
+
+
+/* Adjust height of the Autocomplete input */
+.help-form-input .MuiOutlinedInput-root {
+  height: 48px !important; /* Increased height */
+  padding: 0 !important; /* Remove inner padding */
+  border-radius: 5px; /* Adjust border radius */
+}
+
+/* Adjust padding inside the Autocomplete input */
+.help-form-input .MuiInputBase-input {
+  padding: 0 12px !important; /* Adjust padding for a larger height */
+  font-size: 16px; /* Increase font size */
+  line-height: normal; /* Reset line height */
+}
+
+/* Style datetime-local field separately */
+.help-form-input[type="datetime-local"] {
+  height: 48px; /* Match the height of other inputs */
+  padding: 8px 12px !important; /* Add padding for a better look */
+  font-size: 16px; /* Match font size */
+  text-align: center; /* Keep the text and placeholder centered */
+  border-radius: 5px; /* Keep border radius consistent */
+}
+
+/* Ensure the dropdown arrow aligns properly */
+.MuiAutocomplete-endAdornment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px; /* Adjust spacing */
+}
+
+/* Search Box Styles */
+.help-form-search-container {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Add space between the icon and input */
+  direction: var(--container-direction); /* Adapt to page direction */
+}
+
+.help-form-search {
+  border: 2px solid white !important; /* Default border color */
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px; /* Adjust padding for consistency */
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow to match the icon */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.help-form-search.is-typing {
+  border-color: yellow !important; /* Highlight border in yellow when typing */
+}
+
+.help-form-search input::placeholder {
+  color: white; /* Placeholder color */
+  opacity: 1; /* Ensure the placeholder is fully visible */
+}
+
+.help-form-search input {
+  color: white; /* Input text color */
+}
+
+.search-icon-box {
+  padding: 2px; /* Add padding around the icon */
+  border-radius: 5px; /* Rounded edges for the icon box */
+	width: 67px;
+    height: 43px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid white; /* Default border color */
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.search-icon-box.is-typing {
+  border-color: #fdbe00; /* Highlight border in yellow when typing */
+  animation: pulse 2s infinite; /* Pulse animation when typing */
+}
+
+.search-icon {
+  color: white; /* Default color */
+  transform: scaleX(var(--container-directio, 1)); /* Flip direction dynamically */
+  width: 100%;
+}
+
+/* 🔹 AI Suggestions Dropdown */
+.ai-suggestions-dropdown {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 100%;
+  max-height: 220px;
+  overflow-y: auto;
+  background: white; /* ✅ Visible on blue background */
+  color: black;
+  border: 1px solid #ccc;
+  
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  margin-top: 5px;
+  padding: 5px 0;
+}
+
+/* 🔹 Suggestion Item */
+.ai-suggestion-item {
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  color: black;
+}
+
+/* 🔹 Highlight on Hover */
+.ai-suggestion-item:hover {
+  background: #f5f5f5;
+}
+
+/* 🔹 No Suggestions Message */
+.ai-suggestion-item:empty {
+  text-align: center;
+  color: gray;
+  font-style: italic;
+}
+/* 🔹 Wraps all input fields together for better control */
+.help-form-fields-container {
+  width: 95%; /* ✅ Change width to control all inputs */
+  max-width: 600px; /* ✅ Adjustable width */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* ✅ Adds spacing between inputs */
+}
+
+/* 🔹 Ensures inputs and labels align properly */
+.help-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* 🔹 Labels Styling */
+.help-form-field label {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 🔹 Input Fields */
+.help-form-input {
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

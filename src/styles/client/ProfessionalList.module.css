@@ -1,0 +1,163 @@
+.professionalListContainer {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  background: #1783e0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  padding: 20px 6px 10px 6px !important;
+  box-sizing: border-box !important;
+}
+
+.header {
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+
+.title {
+  font-family: "Saira", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: white !important;
+  background: #1a4b75 !important;
+  border: 3px solid #ffffff !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 14px !important;
+  padding: 9px !important;
+}
+
+.requestId {
+  background: #fdbe00 !important;
+  color: #1a4b75 !important;
+  font-weight: bold !important;
+  padding: 5px 10px !important;
+  border-radius: 8px !important;
+  text-align: center !important;
+  margin: 10px auto !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.requestDetails {
+  text-align: center !important;
+  margin: 10px 0 !important;
+}
+
+.detailsText,
+.dateText {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.divider {
+  background: rgba(26, 75, 117, 0.4) !important;
+  border-radius: 8px !important;
+  margin: 10px auto !important;
+  width: 90% !important;
+  height: 6px !important;
+}
+
+.professionalsList {
+  flex-grow: 1 !important;
+  overflow-y: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  padding: 10px !important;
+}
+
+.professionalCard {
+  background: #1a4b75 !important;
+  border: 3px solid #fdbe00 !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px !important;
+  gap: 15px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.professionalCard:hover {
+  transform: scale(1.05) !important;
+}
+
+.cardContent {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.radioContainer {
+  margin-right: 10px !important;
+}
+
+.radio {
+  color: #fdbe00 !important;
+}
+
+.avatarContainer {
+  flex-shrink: 0 !important;
+  margin: 15px;
+}
+
+.avatar {
+  width: 50px !important;
+  height: 50px !important;
+  border: 3px solid #fdbe00 !important;
+  border-radius: 50% !important;
+}
+
+.textContainer {
+  flex-grow: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 5px !important;
+}
+
+.nameText {
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.offerText {
+  font-family: "Saira", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #fdbe00 !important;
+}
+
+.companyText {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+}
+
+.footer {
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 10px !important;
+  padding: 10px 8.45% !important;
+  background: #1a4b75 !important;
+}
+
+.submitButton {
+  background: #fdbe00 !important;
+  color: #1a4b75 !important;
+  font-family: "Saira", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border-radius: 14px !important;
+  cursor: pointer !important;
+  border: none !important;
+  text-transform: uppercase !important;
+}

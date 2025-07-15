@@ -1,0 +1,156 @@
+/* SMS Verification Container */
+.smsClientVerification_container {
+  background-color: #1783e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  direction:rtl;
+}
+
+/* Content Box */
+.smsClientVerification_content {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    display: flex
+;
+    flex-direction: column;
+}
+.smsClientVerification_phoneField input {
+  text-align: center; /* Correct property for aligning text inside the input */
+  
+}
+
+
+/* Title Styling */
+.smsClientVerification_validationTitle {
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Phone Field */
+.smsClientVerification_phoneField {
+display: flex
+;
+    flex-direction: column;
+    gap: 7px;
+  
+  
+}
+
+/* Phone Number Display */
+.smsClientVerification_phone {
+  background-color: #979797;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Label for SMS Code */
+.smsClientVerification_smsCodeLabel {
+  font-size: 1.2rem;
+  margin: 20px 0 10px 0;
+  color: white;
+}
+
+/* SMS Code Input */
+.smsClientVerification_smsCodeInput {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  direction: ltr;
+}
+
+/* Individual Code Box */
+/* Individual Code Box */
+.smsClientVerification_smsBox {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-color: white;
+  color: black;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Error Styling for Code Boxes */
+.smsClientVerification_error {
+  border-color: red !important;
+  background-color: #ffe6e6; /* Light red background */
+}
+
+
+/* Countdown Timer */
+.smsClientVerification_countdown {
+  color: white;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Action Buttons */
+.smsClientVerification_actionButtons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+.smsClientVerification_button {
+  background-color: #fdbe00 !important;
+  color: black;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.smsClientVerification_button:hover {
+  transform: scale(1.05);
+}
+
+/* Shake Animation */
+.smsClientVerification_shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Error Styling for Code Boxes */
+.smsClientVerification_error {
+  border-color: red !important;
+  background-color: #ffe6e6; /* Light red background */
+}
+
